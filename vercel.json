@@ -1,0 +1,5 @@
+{
+  "buildCommand": "pnpm --filter @workspace/cong-dich-vu-moi build",
+  "outputDirectory": "artifacts/cong-dich-vu-moi/dist/public",
+  "framework": "vite"
+}

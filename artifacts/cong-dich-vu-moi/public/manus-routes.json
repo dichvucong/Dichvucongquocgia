@@ -1,0 +1,9 @@
+{
+  "routes": [
+    {"path":"/","title":"Trang chủ"},
+    {"path":"/tim-du-lieu","title":"Tìm dữ liệu"},
+    {"path":"/tra-cuu-du-lieu","title":"Tra cứu dữ liệu"},
+    {"path":"/an-sinh-xa-hoi","title":"Thông tin bảo hiểm"},
+    {"path":"/admin","title":"Khu quản trị nội bộ"}
+  ]
+}

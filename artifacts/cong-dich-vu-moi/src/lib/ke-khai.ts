@@ -1,0 +1,11 @@
+export type InfoView = { title: string; desc: string; items: string[]; tag: string };
+const norm = (s: string) => s.normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/đ/g, "d").replace(/Đ/g, "D").toLowerCase().trim().replace(/\s+/g, " ");
+export const isKeKhaiQuery = (q: string) => norm(q) === "ke khai";
+const NOTE = "Thông tin chung để tham khảo, không phải biểu mẫu hay hướng dẫn pháp lý chính thức. Hãy đối chiếu với cơ quan có thẩm quyền.";
+export const KE_KHAI_TOPICS: (InfoView & { id: string })[] = [
+  { id: "thue-mau-01", title: "Khai thuế mẫu 01", tag: "Kê khai", desc: `Gợi ý chuẩn bị trước khi tìm hiểu tờ khai thuế mẫu 01. ${NOTE}`, items: ["Xác định đúng loại tờ khai và kỳ khai áp dụng cho trường hợp của bạn", "Tập hợp chứng từ thu nhập, hóa đơn liên quan đến kỳ khai", "Đối chiếu thông tin người nộp thuế đã đăng ký", "Tra cứu mẫu và hướng dẫn hiện hành tại cơ quan thuế"] },
+  { id: "bhxh", title: "Kê khai bảo hiểm xã hội", tag: "Kê khai", desc: `Các chủ đề thường cần chuẩn bị khi tìm hiểu kê khai bảo hiểm xã hội. ${NOTE}`, items: ["Thông tin quá trình làm việc và đóng bảo hiểm", "Giấy tờ chứng minh thay đổi (nếu có)", "Thông tin đơn vị sử dụng lao động", "Liên hệ cơ quan bảo hiểm xã hội nơi cư trú hoặc làm việc"] },
+  { id: "dat-dai", title: "Kê khai đất đai", tag: "Kê khai", desc: `Gợi ý chủ đề khi tìm hiểu kê khai, đăng ký đất đai. ${NOTE}`, items: ["Giấy tờ về nguồn gốc, quyền sử dụng đất hiện có", "Thông tin vị trí, diện tích thửa đất", "Giấy tờ về biến động (chuyển nhượng, thừa kế...) nếu có", "Hỏi bộ phận tiếp nhận hồ sơ đất đai tại địa phương"] },
+  { id: "thu-nhap", title: "Kê khai thu nhập", tag: "Kê khai", desc: `Gợi ý chuẩn bị khi tìm hiểu kê khai thu nhập. ${NOTE}`, items: ["Liệt kê các nguồn thu nhập trong kỳ", "Lưu giữ chứng từ khấu trừ, xác nhận thu nhập", "Thông tin người phụ thuộc (nếu có)", "Kiểm tra quy định hiện hành về đối tượng phải kê khai"] },
+  { id: "khac", title: "Các danh mục kê khai khác", tag: "Kê khai", desc: `Một số nhóm kê khai khác có thể cần tìm hiểu. ${NOTE}`, items: ["Kê khai thông tin cư trú", "Kê khai liên quan đến hộ kinh doanh", "Kê khai tài sản theo yêu cầu của cơ quan, tổ chức", "Tham khảo danh mục thủ tục trên cổng chính thức"] },
+];
