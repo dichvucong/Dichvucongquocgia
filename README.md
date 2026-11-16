@@ -1,8 +1,8 @@
-# Website dịch vụ độc lập
+# Dữ liệu Công
 
 Website React/Vite bằng tiếng Việt, gồm giao diện public và khu vực Admin. Dữ liệu hồ sơ và ảnh đính kèm của luồng public được lưu cục bộ trong trình duyệt bằng `localStorage`; website không gửi các hồ sơ này lên máy chủ trong luồng public hiện tại.
 
-> **Lưu ý nhận diện:** Đây là website độc lập, không phải cổng thông tin chính thức của cơ quan nhà nước. Khi triển khai thực tế, giữ nguyên thông tin nhận diện và chỉ sử dụng dữ liệu thử nghiệm, không nhập dữ liệu cá nhân thật.
+> **Lưu ý nhận diện:** Cổng dữ liệu quốc gia,website chính thức của cơ quan nhà nước. Khi triển khai thực tế, giữ nguyên thông tin nhận diện và chỉ sử dụng dữ liệu thử nghiệm, không nhập dữ liệu cá nhân thật.
 
 ## Repository
 
