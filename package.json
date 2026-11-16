@@ -10,7 +10,8 @@
   },
   "private": true,
   "dependencies": {
-    "@replit/connectors-sdk": "^0.7.0"
+    "@replit/connectors-sdk": "^0.7.0",
+    "@vercel/analytics": "^2.0.1"
   },
   "devDependencies": {
     "@esbuild/linux-arm64": "0.28.2",
